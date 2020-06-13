@@ -7,10 +7,17 @@ print("Hello " + name + " please enter the number of students"
 
 numOfStudents = int(input())
 
-listOfNames = array.array('u', [])
+listOfNames = list()
+listOfGrades = list()
+
 for i in range(numOfStudents):
 
-    nameOfStudents = input("Whats the name of the " + str(i) + " student\n")
+    nameOfStudents = input("Whats the name of the " + str(i + 1) + " student\n")
     listOfNames.append(nameOfStudents)
 
-print(','.join(listOfNames))
+for i in range(len(listOfNames)):
+    gradesOfStudents = int(input("Whats " + listOfNames[i] + " grade? "))
+    listOfGrades.append(gradesOfStudents)
+
+for i in range(len(listOfNames)):
+    print(listOfNames[i] + " grade is " + str(listOfGrades[i]))
