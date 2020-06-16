@@ -21,3 +21,14 @@ for i in range(len(listOfNames)):
 
 for i in range(len(listOfNames)):
     print(listOfNames[i] + " grade is " + str(listOfGrades[i]))
+
+def max():
+    maxGrade = 0
+    maxName = ""
+    for i in range(len(listOfNames)):
+        if listOfGrades[i] > maxGrade:
+            maxGrade = listOfGrades[i]
+            maxName = listOfNames[i]
+    print(maxGrade)
+    print(maxName)
+max()
