@@ -29,6 +29,18 @@ def max():
         if listOfGrades[i] > maxGrade:
             maxGrade = listOfGrades[i]
             maxName = listOfNames[i]
+    print(maxName + " has a grade of:")        
     print(maxGrade)
-    print(maxName)
+
 max()
+
+def min():
+    minGrade = listOfGrades[0]
+    minName = ""
+    for i in range(len(listOfNames)):
+        if listOfGrades[i] < minGrade:
+            minGrade = listOfGrades[i]
+            minName = listOfNames[i]
+    print(minGrade)
+    print(minName)
+min()
